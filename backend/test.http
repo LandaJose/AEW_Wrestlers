@@ -1,0 +1,124 @@
+get http://localhost:5000/api/v1/wrestlers
+
+###
+get https://us-west-2.aws.webhooks.mongodb-realm.com/api/client/v2.0/app/aew_wrestlers-ytbnd/service/AEW_Wrestlers/incoming_webhook/AEW_Wrestlers
+###
+get http://localhost:5000/api/v1/wrestlers?page=3
+
+###
+get http://localhost:5000/api/v1/wrestlers
+
+###
+post http://localhost:5000/api/v1/wrestlers/comments
+Content-Type: application/json
+
+{
+    "wrestlers_id": "616a460859a108dcdb57145b",
+    "text":"BOOM",
+    "user_id":"1432",
+    "name":"JOSE"
+}
+
+###
+post http://localhost:5000/api/v1/wrestlers/comments
+Content-Type: application/json
+
+{
+    "wrestlers_id": "616a449159a108dcdb571459",
+    "text":"KENNY NO BALLS OMEGA",
+    "user_id":"1432",
+    "name":"JOSE"
+}
+
+###
+post http://localhost:5000/api/v1/wrestlers/comments
+Content-Type: application/json
+
+{
+    "wrestlers_id": "616a449159a108dcdb571459",
+    "text":"KENNY OMEGA",
+    "user_id":"1234",
+    "name":"LANDA"
+}
+
+###
+post http://localhost:5000/api/v1/wrestlers/comments
+Content-Type: application/json
+
+{
+    "wrestlers_id": "616a449159a108dcdb571459",
+    "text":"ONE WINGED ANGEL",
+    "user_id":"5423",
+    "name":"JL"
+}
+
+###
+
+put http://localhost:5000/api/v1/wrestlers/comments
+Content-Type: application/json
+
+{
+    "comment_id": "616ba011ecc8c3a21e0bdd5d",
+    "text": "KENNY OMEGA!!!!",
+    "user_id": "1234",
+    "name": "LANDA"
+}
+
+###
+
+DELETE http://localhost:5000/api/v1/wrestlers/comments?id=616ba011ecc8c3a21e0bdd5d
+Content-Type: application/json
+
+{
+    "user_id": "1234",
+    "name": "landa"
+}
+
+###
+
+GET http://localhost:5000/api/v1/wrestlers/name
+
+###
+
+post http://localhost:5000/api/v1/wrestlers/comments
+Content-Type: application/json
+
+{
+    "wrestlersId": "616a449159a108dcdb571459",
+    "text":"KENNY NO BALLS OMEGA",
+    "user_id":"1234",
+    "name":"LANDA"
+}
+
+###
+post http://localhost:5000/api/v1/wrestlers/comments
+Content-Type: application/json
+
+{
+    "wrestlersId": "616a449159a108dcdb571459",
+    "text":"KENNY OMEGA!!!!",
+    "user_id":"2323",
+    "name":"JOSE"
+}
+
+###
+GET http://localhost:5000/api/v1/wrestlers/id/616a449159a108dcdb571459
+
+###
+GET http://localhost:5000/api/v1/wrestlers/id/616a460859a108dcdb57145b
+
+###
+GET http://localhost:5000/api/v1/wrestlers
+
+###
+GET http://localhost:5000/api/v1/wrestlers/
+
+###
+GET http://localhost:5000/api/v1/wrestlers/name
+###
+GET http://localhost:5000/api/v1/wrestlers/id/616a449159a108dcdb571459
+###
+GET http://localhost:5000/api/v1/wrestlers/id/616a449159a108dcdb571459/titleReign
+
+###
+GET http://localhost:5000/api/v1/wrestlers/id/616a449159a108dcdb571459/stableMembers
